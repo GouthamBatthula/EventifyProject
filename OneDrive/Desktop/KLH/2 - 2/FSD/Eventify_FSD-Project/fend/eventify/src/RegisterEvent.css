@@ -1,0 +1,72 @@
+.register-event-page {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.RegisterEvent-header {
+  flex: 1;
+  text-align: center;
+  padding: 20px;
+  font-family: 'Monospace', Lucida Console;
+  margin-top: 10vh;
+}
+
+.register-event-form {
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.form-group textarea {
+  resize: vertical;
+}
+
+.btn {
+  font-family: 'Monospace', Lucida Console; /* Change font */
+  margin-top: 20px;
+  color: rgb(0, 0, 0); /* Black text color */
+  background-color: white; /* White background */
+  text-decoration: none; /* Remove underline */
+  border: 2px solid rgb(0, 0, 0); /* Add a black border */
+  padding: 10px 20px;
+  font-size: 1em;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease, border-radius 0.3s;
+  display: inline-block; /* Ensure it behaves like a button */
+}
+
+.btn:hover {
+  background: rgb(9, 218, 9); /* Green background */
+  transform: scale(1.05);
+  border-radius: 30px; /* Add curved edges */
+  box-shadow: 0 0 15px rgb(174, 0, 255), 0 0 30px rgba(212, 90, 253, 0.7); /* Add glow effect */
+}
+
+.btn:active {
+  background-color: white; /* White background when active */
+  color: black; /* Black text color when active */
+  transform: scale(1);
+  border: 2px solid #ccc; /* Add a subtle border for a pressed look */
+}
