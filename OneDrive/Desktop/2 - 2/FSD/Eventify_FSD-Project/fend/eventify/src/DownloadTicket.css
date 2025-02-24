@@ -1,0 +1,88 @@
+.download-ticket-page {
+  padding: 20px;
+}
+
+.DownloadTicket-header {
+  text-align: center;
+}
+
+.ticket-details {
+  margin-top: 30px;
+  padding: 40px;
+  border: 1px solid #ccc;
+  border-radius: 50px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: #ffffffb1;
+  text-align: center;
+}
+
+.ticket-details h2 {
+  margin-bottom: 15px;
+}
+
+.ticket-details p {
+  margin: 10px 0;
+  display: flex;
+  justify-content: space-between;
+  white-space: nowrap;
+}
+
+.ticket-details p strong {
+  flex: 1;
+  text-align: left;
+  margin-right: 15px;
+}
+
+.ticket-details p span {
+  flex: 2;
+}
+
+.barcode {
+  width: 50px; /* Adjust the width as needed */
+  height: auto; /* Maintain aspect ratio */
+  margin: 20px auto; /* Center the barcode */
+  display: block; /* Ensure it behaves like a block element */
+}
+
+.qrcode {
+  width: 150px; /* Adjust the width as needed */
+  height: auto; /* Maintain aspect ratio */
+  margin: 20px auto; /* Center the QR code */
+  display: block; /* Ensure it behaves like a block element */
+}
+
+.navigate-button {
+  font-family: 'Monospace', Lucida Console; /* Change font */
+  margin-top: 20px;
+  color: rgb(0, 0, 0); /* Black text color */
+  background-color: white; /* White background */
+  text-decoration: none; /* Remove underline */
+  border: 2px solid rgb(0, 0, 0); /* Add a black border */
+  padding: 10px 20px;
+  font-size: 1em;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease, border-radius 0.3s;
+  display: inline-block; /* Ensure it behaves like a button */
+}
+
+.navigate-button:hover {
+  background: rgb(9, 218, 9); /* Green background */
+  transform: scale(1.05);
+  border-radius: 30px; /* Add curved edges */
+  box-shadow: 0 0 15px rgb(174, 0, 255), 0 0 30px rgba(212, 90, 253, 0.7); /* Add glow effect */
+}
+
+.navigate-button:active {
+  background-color: white; /* White background when active */
+  color: black; /* Black text color when active */
+  transform: scale(1);
+  border: 2px solid #ccc; /* Add a subtle border for a pressed look */
+}
+
+.logo {
+  width: 100px; /* Adjust the width as needed */
+  height: auto; /* Maintain aspect ratio */
+  margin: 20px auto; /* Center the logo */
+  display: block; /* Ensure it behaves like a block element */
+}
