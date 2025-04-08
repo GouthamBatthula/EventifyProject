@@ -1,0 +1,108 @@
+.add-events-page {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.AddEvents {
+  text-align: center;
+  padding: 20px;
+}
+
+.AddEvents-header {
+  flex: 1;
+  text-align: center;
+  padding: 20px;
+  font-family: 'Monospace', Lucida Console;
+  margin-top: 10vh;
+}
+
+.AddEvents form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.message.success {
+  color: rgb(3, 159, 3);
+  font-size: 16px;
+}
+
+.message.error {
+  color: red;
+  font-size: 16px;
+
+}
+
+.AddEvents input {
+  margin: 10px;
+  padding: 10px;
+  font-size: 1em;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.submit-button {
+  font-family: 'Monospace', Lucida Console; /* Change font */
+  margin-top: 20px;
+  color: rgb(0, 0, 0);
+  border: none;
+  padding: 10px 20px;
+  font-size: 1em;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease, border-radius 0.3s;
+}
+
+.submit-button:hover {
+  background: rgb(9, 218, 9); /* Gradient purple background */
+  transform: scale(1.05);
+  border-radius: 30px; /* Add curved edges */
+  box-shadow: 0 0 15px rgb(174, 0, 255), 0 0 30px rgba(212, 90, 253, 0.7); /* Add glow effect */
+}
+
+.submit-button:active {
+  background-color: #ffffff55;
+  transform: scale(1);
+}
+
+
+
+.add-events-container {
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.form-group textarea {
+  resize: vertical;
+}
+
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
