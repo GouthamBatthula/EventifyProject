@@ -1,19 +1,18 @@
 .navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
   background-color: #333;
-  overflow: hidden;
+  color: white;
   width: 80%; /* Make navbar span the full width */
   position: sticky; /* Stick to the top */
-  /* Remove fixed position */
   top: 0;
   left: 0;
-  display: flex;
-  justify-content: space-between; /* Space between app name and links */
-  align-items: center;
-  padding: 0 20px; /* Add padding for spacing */
   border-bottom-left-radius: 25px; /* Add curved edges at the bottom */
   border-bottom-right-radius: 25px; /* Add curved edges at the bottom */
   z-index: 1000; /* Ensure navbar is on top */
-  overflow-x: auto; /* Enable horizontal scrolling */
+  overflow: visible; /* Ensure dropdowns are visible outside the navbar */
 }
 
 .navbar ul {
@@ -47,4 +46,50 @@
   font-size: 1.5em;
   font-family: 'Monospace', Lucida Console; /* Change font */
   margin-right: auto; /* Align app name to the left */
+}
+
+.navbar-brand a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.5rem;
+}
+
+.navbar-profile {
+  position: relative;
+}
+
+.profile-icon {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.profile-dropdown {
+  position: relative;
+}
+
+.dropdown-menu {
+  position: absolute;
+  top: 100%; /* Position the dropdown below the navbar */
+  right: 0;
+  background-color: white;
+  color: black;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+  padding: 10px 0;
+  width: 200px; /* Adjust width as needed */
+}
+
+.dropdown-item {
+  padding: 10px 20px;
+  text-decoration: none;
+  color: black;
+  display: block;
+}
+
+.dropdown-item:hover {
+  background-color: #f0f0f0;
 }
