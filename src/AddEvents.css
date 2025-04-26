@@ -1,0 +1,89 @@
+.add-events-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: transparent;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  padding: 20px;
+}
+
+.AddEvents-header {
+  width: 100%;
+  max-width: 500px;
+  border-radius: 16px;
+  background: transparent;
+}
+
+.AddEvents-header h1 {
+
+  margin-bottom: 30px;
+  text-align: center;
+  font-size: 2.8em;
+  color: black
+}
+
+/* Form group with white background */
+.form-group {
+  display: flex;
+  align-items: center;
+  border-radius: 12px;
+  padding: 15px 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.05);
+}
+
+.form-group label {
+  font-weight: bold;
+  width: 140px;
+  color: #333;
+  margin-right: 10px;
+  text-align: right;
+}
+
+.form-group input,
+.form-group textarea {
+  flex: 1;
+  padding: 10px;
+  font-size: 15px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  background-color: #f9f9f9;
+  color: #000;
+  outline: none;
+  box-sizing: border-box;
+}
+
+
+/* Button styling */
+.navigate-button {
+  padding: 12px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+  width: 100%;
+  transition: background-color 0.2s, transform 0.2s;
+}
+
+.navigate-button:hover {
+  background-color: #0056b3;
+  transform: scale(1.03);
+}
+
+/* Optional: Message styling */
+.message {
+  margin-top: 15px;
+  font-size: 14px;
+  text-align: center;
+}
+
+.message.success {
+  color: green;
+}
+
+.message.error {
+  color: red;
+}

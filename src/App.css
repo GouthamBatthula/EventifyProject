@@ -1,0 +1,251 @@
+.App {
+  text-align: center;
+  background:
+    linear-gradient(rgba(255, 255, 255, 0.77), rgba(255, 255, 255, 0.282)),
+    linear-gradient(45deg, #8800ff5e, #00ffff9e, #ff006a5e);
+  background-blend-mode: overlay;
+  min-height: 50vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  color: black;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.footer {
+  background-color: #333;
+  overflow: hidden;
+  width: 100%;
+  justify-content: center;
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+  padding: 20px 0; /* Increased padding for better spacing */
+  margin-top: 80px;
+  color: white; /* Set text color to white */
+  text-align: center;
+}
+
+.social-links {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  gap: 35px; /* Space between icons */
+}
+
+.social-icon {
+  font-size: 24px; /* Adjust icon size */
+  color: white; /* Icon color */
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.social-icon:hover {
+  transform: scale(1.2); /* Slight zoom effect on hover */
+  color: #00aced; /* Change color on hover */
+}
+
+.events {
+  margin-top: 20px;
+}
+
+.event {
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 20px;
+  margin: 10px;
+  border-radius: 10px;
+}
+
+.App-header {
+  min-height: 40vh;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  font-size: calc(10px + 2vmin);
+  color: white;
+  text-align: left;
+  padding-left: 20px;
+  padding-top: 20px;
+}
+
+.main-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 200vh;
+  position: relative;
+  width: 100%;
+}
+
+.welcome-section {
+  width: 100%;
+  height: 100vh;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  background: transparent;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+  padding-top: 190px;
+  transition: transform 0.8s ease, opacity 0.8s ease;
+}
+.welcome-section {
+  transition: transform 0.1s ease-out, opacity 0.1s ease-out;
+}
+
+
+.fade-in {
+  animation: fadeSlide 1.5s ease forwards;
+}
+
+@keyframes fadeSlide {
+  0% {
+    opacity: 0;
+    transform: translateY(-30px) scale(0.9);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+.welcome-message {
+  text-align: left;
+  font-size: 1.5em;
+  color: black;
+}
+
+.scroll-messages {
+  text-align: center;
+  margin-top: 20px;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+  font-size: 1.5em;
+  color: black
+}
+
+.scroll-messages.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.navigate-button {
+  margin-top: 20px;
+  color: black;
+  background-color: white;
+  text-decoration: none;
+  border: 2px solid black;
+  padding: 10px 20px; /* Reduced padding for a smaller button */
+  font-size: 1.5em; /* Slightly smaller font size */
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease, border-radius 0.3s;
+  display: inline-block;
+  width: auto; /* Ensure the button width adjusts to its content */
+  text-align: center; /* Center-align the text */
+  font-family: 'Segoe UI', 'Helvetica Neue', sans-serif;
+
+}
+
+
+.navigate-button:hover {
+  background: rgb(9, 218, 9);
+  transform: scale(1.05);
+  border-radius: 30px;
+  box-shadow: 0 0 15px rgb(174, 0, 255), 0 0 30px rgba(212, 90, 253, 0.7);
+}
+
+.navigate-button:active {
+  background-color: white;
+  color: black;
+  transform: scale(1);
+  border: 2px solid #ccc;
+}
+
+.navbar-logo {
+  height: 60px;
+  margin-left: 10px;
+}
+
+.image-marquee-vertical {
+  width: 100%;
+  height: 100px;
+  overflow: hidden;
+  margin-top: 20px;
+  position: relative;
+  background-color: #ffffff;
+  border-top: 2px solid #ffffff;
+  border-bottom: 2px solid #ffffff;
+  z-index: 0;
+}
+
+.image-track {
+  display: flex;
+  animation: scroll-left 20s linear infinite;
+  white-space: nowrap;
+}
+
+.image-track img {
+  height: 80px;
+  margin-right: 40px;
+}
+
+@keyframes scroll-left {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.bold-text {
+  font-weight: bold;
+}
+
+.host-section {
+  margin-top: 250px; /* Add space above the host section */
+  margin-bottom: 250px; /* Add space below the host section */
+  text-align: center;
+  font-size: 1.8em;
+  color: black
+}
+
+.host-button {
+  margin-top: 20px;
+  color: black;
+  background-color: white;
+  text-decoration: none;
+  border: 2px solid black;
+  padding: 10px 20px; /* Reduced padding for a smaller button */
+  font-size: 1em; /* Slightly smaller font size */
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease, border-radius 0.3s;
+  display: inline-block;
+  width: auto; /* Ensure the button width adjusts to its content */
+  text-align: center; /* Center-align the text */
+  font-family: 'Segoe UI', 'Helvetica Neue', sans-serif;
+
+}
+
+
+.host-button:hover {
+  background: rgb(9, 218, 9);
+  transform: scale(1.05);
+  border-radius: 30px;
+  box-shadow: 0 0 15px rgb(174, 0, 255), 0 0 30px rgba(212, 90, 253, 0.7);
+}
+
+.host-button:active {
+  background-color: white;
+  color: black;
+  transform: scale(1);
+  border: 2px solid #ccc;
+}

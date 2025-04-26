@@ -1,0 +1,87 @@
+.Events-header {
+  text-align: center;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+.events-page {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.events {
+  width: 100%;
+  padding: 20px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-auto-rows: minmax(100px, auto);
+  gap: 20px;
+  text-align: center;
+  justify-content: center;
+}
+
+.event {
+  background-color: rgba(255, 255, 255, 0.307);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+
+@keyframes glow-blink {
+  0% {
+    box-shadow: 0 0 10px rgba(174, 0, 255, 0.7), 0 0 20px rgba(212, 90, 253, 0.5);
+  }
+  50% {
+    box-shadow: 0 0 20px rgba(174, 0, 255, 1), 0 0 40px rgba(212, 90, 253, 0.7);
+  }
+  100% {
+    box-shadow: 0 0 10px rgba(174, 0, 255, 0.7), 0 0 20px rgba(212, 90, 253, 0.5);
+  }
+}
+
+.event:hover {
+  transform: scale(1.5);
+  border-radius: 30px;
+  background-color: rgba(250, 235, 215, 0.556);
+  animation: glow-blink 1.5s infinite;
+}
+
+/* DISABLED EVENT */
+.disabled-event {
+  pointer-events: none;
+  background-color: rgba(255, 0, 0, 0.2);
+  cursor: not-allowed;
+  transform: none !important;
+  animation: none !important;
+  border-radius: 10px;
+}
+
+.disabled-event:hover {
+  transform: none;
+}
+
+.event .closed-text {
+  font-weight: bold;
+  color: red !important;
+  margin-top: 10px;
+}
+
+
+.event h2 {
+  color: rgb(10, 6, 6);
+}
+
+.event p {
+  color: rgb(255, 255, 255);
+}
+
+.glow-input {
+  transition: box-shadow 0.3s;
+}
+
+.glow-input:focus {
+  box-shadow: 0 0 10px #61dafb, 0 0 20px #21a1f1;
+}
